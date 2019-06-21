@@ -22,6 +22,6 @@ public class Citadell {
   @RequestMapping("/")
   @ResponseBody
   String home() {
-    return "Hello Citadell 2!";
+    return "Hello Citadell Version 3!";
   }
 }
