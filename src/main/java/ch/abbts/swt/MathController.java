@@ -7,9 +7,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("math")
+
+
+/**
+ * Dies ist ein Kommentar.
+*/
 public class MathController {
-    @GetMapping("add")
-    public Integer add(@RequestParam(name = "summand1", defaultValue = "1") Integer s1, @RequestParam(name = "summand2", defaultValue = "1") Integer s2) {
-        return s1+s2;
-    }
+  /**
+   * Dies ist ein Kommentar.
+  */
+  @GetMapping("add")
+  public Integer add(@RequestParam(name = "summand1", defaultValue = "1")
+         Integer s1, @RequestParam(name = "summand2", defaultValue = "1")
+         Integer s2) {
+    return s1 + s2;
+  }
 }

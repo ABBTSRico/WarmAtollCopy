@@ -11,9 +11,9 @@ public class InsertionSortStrategy implements IntegerSortStrategy {
       int key = toSort[i];
       int j = i - 1;
 
-            /* Move elements of toSort[0..i-1], that are
-               greater than key, to one position ahead
-               of their current position */
+      /* Move elements of toSort[0..i-1], that are
+      greater than key, to one position ahead
+      of their current position */
       while (j >= 0 && toSort[j] > key) {
         toSort[j + 1] = toSort[j];
         j = j - 1;
