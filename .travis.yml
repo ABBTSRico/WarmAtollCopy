@@ -7,12 +7,15 @@ deploy:
   api_key:
     secure: IhLUBbzlp5wS3i3a9N36pe/kEsXnAPC0PMRorb07gfFkq30+hEGBXR1Jx11S8T5+E/hMflfoij6z7PB6vPSdRN+Abns/rL9pF0ukuMa7d76X+3uaoYsLwQGIKWYePnmtfgtwKTTxjLpGQKG4lCwb48xbAEZz7oEFsHd+/4Yi4T1ofFCA0ij671n68oU7Z0Bv1DYtJYkX9cn/zEMFDsgvMPWPF5O0Bzw39ht0mbRWUS8j96dzgVhOlvlLai85LihG4wsmbF7hQkwl+Htv/NSRfGGud32xI6ck0uqxMJo5VbnpV4fRN5ec5j6dZwXh8zUWmwuk/hBmbWuKxapyW+y0ts01d4dpaxE1fzShFTYcQ5a9J6dsNlQs8GECL+CC3Jfu8jcjSoNTXsnUgdQX9a2eFOSTNo9Vl3LEHXFomaNLjmHVLTZOCHeZOpJZoattRK/dtXRTRs1J/iw49XTNPcKMLSpjl8tF2gH8mNsjl0xrYHkALJgVgFxf1H7PwH/notxF70PBH9+AZbRbAWzCP8soi4nW2njAkH3OLofK4FdccBeaeXMIFbUHPDNsY7AnkfH+yJ4KEmuJrnF3XuUWD73OJJaXboYeMtaXpIIoibtyAnP/BVaV+SW9vR22skAr0DtifLLh9UMj/vnQkLQbUH9bOUYUJT/OMYTQVjk3tUUtnak=
   app: lit-basin-75485
-  notifications:
-    webhooks:
-      urls:
-        - https://hooks.zapier.com/hooks/catch/5482257/ob2kxcc/
-      on_success: change # default: always
-      on_failure: always # default: always
-      on_start:   change # default: never
-      on_cancel:  always # default: always
-      on_error:   always # default: always
+branches:
+  only:
+    - master
+notifications:
+  webhooks:
+    urls:
+      - https://hooks.zapier.com/hooks/catch/5482257/ob2kxcc/
+    on_success: change # default: always
+    on_failure: always # default: always
+    on_start:   change # default: never
+    on_cancel:  always # default: always
+    on_error:   always # default: always
