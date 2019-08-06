@@ -9,10 +9,10 @@ deploy:
   app: lit-basin-75485
   notifications:
     webhooks:
-        urls:
-            - https://hooks.zapier.com/hooks/catch/5482257/ob2kxcc/
-        on_success: always # default: always
-        on_failure: always # default: always
-        on_start: never # default: never
-        on_cancel: never # default: always
-        on_error: always # default: always
+      urls:
+        - https://hooks.zapier.com/hooks/catch/5482257/ob2kxcc/
+      on_success: change # default: always
+      on_failure: always # default: always
+      on_start:   change # default: never
+      on_cancel:  always # default: always
+      on_error:   always # default: always
