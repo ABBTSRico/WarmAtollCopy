@@ -22,6 +22,6 @@ public class Citadell {
   @RequestMapping("/")
   @ResponseBody
   String home() {
-    return "Hallo zusammen, Gruss Rico";
+    return "Hallo zusammen, Gruss Rico - Factory";
   }
 }
